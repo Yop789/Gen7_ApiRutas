@@ -30,6 +30,24 @@ public class ApiDirreciones extends HttpServlet {
         String cp = req.getParameter("cp");
         String ciudad = req.getParameter("ciudad");
         String estado = req.getParameter("estado");
+        if (calle == "null") {
+            calle = "";
+        }
+        if (numero == "null") {
+            numero = "";
+        }
+        if (colonia == "null") {
+            colonia = "";
+        }
+        if (cp == "null") {
+            cp = "";
+        }
+        if (ciudad == "null") {
+            ciudad = "";
+        }
+        if (estado == "null") {
+            estado = "";
+        }
 
         Direccion d = new Direccion();
 
